@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "d24bec51-7788-407e-8d22-63f51141a628"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "introphone": {
+    "interphone": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/introphone",
+            "outputPath": "dist/interphone",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,6 +34,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -72,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "introphone:build:production"
+              "browserTarget": "interphone:build:production"
             },
             "development": {
-              "browserTarget": "introphone:build:development"
+              "browserTarget": "interphone:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "introphone:build"
+            "browserTarget": "interphone:build"
           }
         },
         "test": {
@@ -99,6 +103,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -107,5 +112,5 @@
       }
     }
   },
-  "defaultProject": "introphone"
+  "defaultProject": "interphone"
 }

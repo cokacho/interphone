@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: "Alegreya";
+  src: local("Alegreya"), url(./assets/fonts/alegreya-sans/AlegreyaSansSC-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Alegreya-regular";
+  src: local("Alegreya-regular"), url(./assets/fonts/alegreya-sans/AlegreyaSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Alegreya-italic";
+  src: local("Alegreya-italic"), url(./assets/fonts/alegreya-sans/AlegreyaSans-Italic.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-family: "Alegreya-thin";
+  src: local("Alegreya-thin"), url(./assets/fonts/alegreya-sans/AlegreyaSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AlegreyaSC-blackitalic";
+  src: local("AlegreyaSC-blackitalic"), url(./assets/fonts/alegreya-sans/AlegreyaSansSC-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AlegreyaSC-italic";
+  src: local("AlegreyaSC-italic"), url(./assets/fonts/alegreya-sans/AlegreyaSansSC-Italic.ttf) format("truetype");
+}
+
+
+.title {
+  font-family: "Alegreya", Arial, Helvetica, sans-serif;
+}
+
+.sub-title {
+  font-family: "Alegreya", Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+.topic {
+  font-family: "Alegreya-regular", Arial, Helvetica, sans-serif;
+}
+
+.phrase {
+  font-family: "Alegreya-italic", Arial, Helvetica, sans-serif;
+}
+
+.icon-center-position {
+  display: inline-block;
+  position: relative;
+  top: 0.3rem;
+}
+
+.cut-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 160px;
+  height: 1.2em;
+  white-space: nowrap;
+}

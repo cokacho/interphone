@@ -1,0 +1,15 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="h1 title">Temas para conversar</div>
+        </div>
+        <div class="col-12">
+            <div *ngFor="let item of list" class="m-3">
+                <button (click)="getDetail(item)" mat-raised-button class="w-100 text-left p-3"> <div class="w-100 topic h5"> <mat-icon class="icon-center-position mr-4 text-success">label</mat-icon> {{item.title}}</div></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

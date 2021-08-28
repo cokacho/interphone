@@ -1,0 +1,9 @@
+<ng-container *ngIf="selfLayout !== 'blank'; else blankLayout">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</ng-container>
+
+<ng-template #blankLayout>
+    <router-outlet></router-outlet>
+</ng-template>

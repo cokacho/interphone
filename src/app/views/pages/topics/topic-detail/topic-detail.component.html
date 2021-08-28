@@ -1,0 +1,16 @@
+
+<div class="py-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="h1 title">T&iacute;tulo</div>
+        </div>
+        <div class="col-12">
+            <div *ngFor="let card of cards" class="m-3">
+                <button (click)="getDetail(card)" mat-raised-button class="w-100 text-left p-3"> <div class="w-100 topic h5 cut-text"> <mat-icon class="icon-center-position mr-4 text-primary ">label</mat-icon> {{card.content}}</div></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

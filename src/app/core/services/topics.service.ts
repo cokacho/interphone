@@ -18,7 +18,7 @@ export class TopicsService extends BaseService {
     return of([
       Object.assign(new Topic(), {
         id: 1,
-        title: "La vida después de la muerte",
+        title: "¿Puede ayudarnos la Biblia a hacer frente a las preocupaciones?",
         author: {id: 1, first_name: "Nelson", last_name: "Escudero"},
       }),
       Object.assign(new Topic(), {

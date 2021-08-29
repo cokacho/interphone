@@ -34,16 +34,7 @@ export class TopicDetailComponent implements OnInit {
   }
 
   public getDetail(card: TopicCard) {
-    if (card?.answers) {
-      const firstAnswer = card.answers[0];
-      if (firstAnswer.next_section_id === -1) {
-        this.router.navigate(['/'], {});
-        return
-      }
-
-      this.router.navigate([`section/${firstAnswer.next_section_id}`], {relativeTo: this.route});
-
-    }
+    this.router.navigate([`section/${card.id}`], {relativeTo: this.route});
     //display error
   }
 }

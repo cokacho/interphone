@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {PartialsModule} from "./views/partials/partials.module";
 import {ThemeModule} from "./views/theme/theme.module";
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ThemeModule} from "./views/theme/theme.module";
     BrowserAnimationsModule,
     NgbModule,
     ThemeModule,
-    PartialsModule
+    PartialsModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

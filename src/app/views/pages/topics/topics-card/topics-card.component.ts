@@ -21,6 +21,7 @@ export class TopicsCardComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.sectionId = Number(params.get('section_id'));
+      console.log(this.sectionId)
       this.getItem(this.sectionId);
     });
   }
